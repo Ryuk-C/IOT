@@ -69,4 +69,5 @@ update()
 """
 -data is sent to cosmos db via iot hub on mqtt
 -watering command is recieved with https request BUT request action is stacked as water?
+
 """
