@@ -1,7 +1,5 @@
 class Plant:
-    def __init__(self, id, name,minMoisture,maxMoisture):
-        self.name = name
-        self.id = id
+    def __init__(self,minMoisture,maxMoisture):
         self.minMoisture = minMoisture
         self.maxMoisture = maxMoisture
         self.moisture = maxMoisture # 0 - 100 | 100 - 75 very wet | 75 - 50 wet | 50 - 0 dry
@@ -20,3 +18,11 @@ class Plant:
                 self.__startWatering=False
         elif self.moisture>5:
             self.moisture-=roomTemperature/10
+    
+    def isWaterable(self):
+        if self.moisture<self.minMoisture and self.waterLevel>1:
+            return True
+        return False
+    
+    def startWatering(self):
+        self.__startWatering=True
