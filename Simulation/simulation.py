@@ -88,7 +88,7 @@ def simulate_device():
         plant.update(roomTemperature)
         print(plant.moisture," ",plant.waterLevel)
         # Send data to IoT hub
-        #send_data_to_iot_hub(client, plant.moisture, plant.waterLevel , topic)
+        send_data_to_iot_hub(client, plant.moisture, plant.waterLevel , topic)
 
         # Wait for some time before sending the next data
         time.sleep(1)
