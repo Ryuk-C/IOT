@@ -6,10 +6,10 @@ from paho.mqtt import client as mqtt
 from plant import Plant
 
 # Azure IoT Hub connection details
-path_to_root_cert = r"D:\\CDV\\Semester_5\\IoT\\IOT\\Simulation\\root_cert.pem"
-device_id = "plant-1"
-sas_token = "SharedAccessSignature sr=my-iot-hub-watering.azure-devices.net%2Fdevices%2Fplant-1&sig=F2AnYxtOuNpu0ApXFzeTmT%2FQ9S7iydUt6Pnl8SvOUUY%3D&se=1734524165"
-iot_hub_name = "my-iot-hub-watering"
+path_to_root_cert = r"root_cert.pem"
+device_id = ""
+sas_token = ""
+iot_hub_name = ""
 
 plant = Plant(40, 60)  
 roomTemperature = random.uniform(20, 30)  # Simulated room temperature
