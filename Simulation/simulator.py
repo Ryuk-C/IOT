@@ -8,7 +8,7 @@ import socket
 
 # Azure IoT Hub connection details
 
-sas_token = "HostName=wateringsystemhub.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=tsgKsAoWiPVMN8gEVds7GK6PotZtH+DH0AIoTGJJ9YY="
+sas_token = ""
 
 # Azure IoT Hub connection details
 iot_hub_name = "wateringsystemhub"
@@ -16,15 +16,15 @@ iot_hub_name = "wateringsystemhub"
 # Configuration for multiple devices (at least 3 devices linked to 3 users)
 device_configs = {
     "SoilSensorSimulator": {
-        "sas_token": "SharedAccessSignature sr=wateringsystemhub.azure-devices.net%2Fdevices%2FSoilSensorSimulator&sig=kBlNqRiemVVUThdf50tziGoPzyjdA776Fkiot930zTM%3D&se=1742395375",
+        "sas_token": "",
         "user_id": "user_1"
     },
     "SoilSensorSimulator2": {
-        "sas_token": "SharedAccessSignature sr=wateringsystemhub.azure-devices.net%2Fdevices%2FSoilSensorSimulator2&sig=xOiZzhK6wy60IkoG9R8MTpH25n2arO8GfgBYprjxu7Y%3D&se=1742395411",
+        "sas_token": "",
         "user_id": "user_2"
     },
     "SoilSensorSimulator3": {
-        "sas_token":  "SharedAccessSignature sr=wateringsystemhub.azure-devices.net%2Fdevices%2FSoilSensorSimulator3&sig=YXhX8X1VAnTgy5p72T3JNJLG8sL2vWw69ZBMkbCd%2Fdo%3D&se=1742395433",
+        "sas_token":  "",
         "user_id": "user_3"
     }
 }
